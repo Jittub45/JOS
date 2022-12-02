@@ -1,74 +1,101 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Railway Ticket Booking</title>
-        <link rel="stylesheet" href="index.css"/>
-       <!-- abhinandan-->
-    </head>
+  <!doctype html>
+  <html>
 
-    <body>
+  <head>
+    <title>RAILWAY RESERVATION</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
 
-        <div class="main">
-            <h1 class="head">Railway Ticket reservation system</h1>
-          <div class="navigation">
-    		<ul><!-- abhinandan-->
-    		<li><a href="index.html">HOME</a></li>
-    		<li><a href="meal.html">MEALS</a></li>
-    		<li><a href="holiday.html">H PACKAGES</a></li>
-    		<li><a href="service.html" id="onlink">SERVICE</a></li>
-    		<li><a href="contact.html">CONTACT US</a></li>
-    		</ul>
-            </div>
-        <div>
-            <h1 class="service">Service at station</h1>
+  <body>
+    <header class="nav-box">
+      <img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35mgCl3KrQT4xTP4Elx2lO0zyK2-Cr8arejVwYM0&s" alt="Logo-Image">
+      <h1 style="color:black; "> INDIAN RAILWAYS</h1>
 
-        <div class="service2">
-            <h2 class="service1">Book Wheel chair </h2>
-           <form><!-- abhinandan-->
-           <ul>
-               <b>Enter Station&emsp;<input type="text" placeholder="       [STN Code]"> </b> <br> <br>
-               <b>PNR No.&emsp;&emsp;&emsp;<input type="text" placeholder="       [PNR]"> </b> <br> <br>
-               <b>Contact No.&emsp;<input type="text" placeholder="       [Contact]"> </b> <br> <br>
-               <b>Price -  ₹500</b>
-                <button class="submit" type="button" onclick="openForm()">Book Now</button>
+      <ul>
+        <li>
+          <a  class="home"href="#">Home</a>
+        </li>
+        <li>
+          <a class="meals" href="meals.html">Meals</a>
+        </li>
+        <li>
+          <a class="holiday"href="holiday packages.html">Holiday Packages </a>
+        </li>
+        <li>
+          <a class="service"href="service at station.html">Service At Station</a>
+        </li>
+        <li>
+          <a class="contactus"href="contact us.html">Contact Us</a>
+        </li>
+      </ul>
+    </header>
 
-            <div class="form-popup" id="myForm">
-            <div class="popup">
-           <h1>Your Service is Booked</h1>
-           <h2>You will get SMS</h2>
-           <button type="button" class="hide" onclick="closeForm()">Close</button>
-           </div> </div>
-
-
-           </ul>
-       </form>
-       </div>
-        <div class="service2">
-            <h2 class="service1">Book Rest Rooms</h2>
-           <form><!-- abhinandan-->
-           <ul>
-               <b>Enter Station&emsp;<input type="text" placeholder="       [STN Code]"> </b> <br> <br>
-               <b>PNR No.&emsp;&emsp;&emsp;<input type="text" placeholder="       [PNR]"> </b> <br> <br>
-               <b>Contact No.&emsp;<input type="text" placeholder="       [Contact]"> </b> <br> <br>
-               <b>Price -  ₹1000 for 24hrs</b>
-
-                <button class="submit" type="button" onclick="openForm()">Book Now</button>
-
-      <div class="form-popup" id="myForm">
-    <div class="popup">
-    <h1>Your Service is Booked</h1>
-    <h2>You will get SMS</h2>
-    <button type="button" class="hide" onclick="closeForm()">Close</button>
-    </div> </div>
-
-           </ul>
-       </form>
-        </div>
-       </div>
-
+    <!-- <center>
+      <h1 style="color:black;"><b><big><big><big>INDIAN RAILWAYS</big></b></h1>
+    </center> -->
+    <!-- <img src="https://www.bing.com/th/id/OGC.c6a01fd03aaec2ad7f421373cce33050?pid=1.7&rurl=https%3a%2f%2fwebstockreview.net%2fimages%2fclipart-train-animated-gif-4.gif&ehk=hq6nhx5FgBdIIl%2by6kUHPNii3hFXpUx4YPM6Ff14jrU%3d" align="right" width="814"
+     height="320" > -->
+    <!--
+<br><br><br><br><br><br> -->
+    <div>
+      <div>
+        <form class="form">
+          <br />
+          <tr>
+            <td colspan=3>
+              <h1>Book your ticket here</h1>
+            </td>
+          </tr>
+          <label for="TEXT">FROM: </label>
+          <input type="text" placeholder="From" />
+          <label for="email">TO: </label>
+          <input type="TEXT" placeholder="TO" />
+          <select>
+            <option value="select">All classes</option>
+            <option value="Sleeper">Sleeper</option>
+            <option value="Economy">Economy</option>
+            <option value="business">business</option>
+          </select>
+          <br />
+          <br />
+          <input type="button" class="btn" value="FIND TRAIN" />
+        </form>
+      </div>
     </div>
 
+    <!-- <br><br><br><br><br><br>
 
-       <script src="main.js"></script>
-    </body>
-</html>
+    <div class="column">
+      <br><br><br>
+      <div class="card">
+        <div class="container">
+          <h4>TOURIST TRAINS</h4>
+          <p><br><br><br><br><br><br><br></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <h2>HOLIDAYS</h2>
+      <div class="card">
+
+        <div class="container">
+          <h4>INTERNATIONAL TRAINS</h4>
+          <p><br><br><br><br><br><br></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h4>NATIONAL PACKAGES</h4>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body> -->
+
+  </html>
